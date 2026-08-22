@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.u0x48lab.body_detection_example">
     <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 选择截图/照片制作表情包（Android 13+ 用 READ_MEDIA_IMAGES，低版本用 READ_EXTERNAL_STORAGE） -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
    <application
         android:label="body_detection_example"
         android:icon="@mipmap/ic_launcher">
